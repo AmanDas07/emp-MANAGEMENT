@@ -10,7 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 function EmployeeForm() {
     const [state] = useContext(userContext);
-    const rc = JSON.parse(localStorage.getItem('record'));
+    const rc = JSON.parse(window.localStorage.getItem('record'));
 
     const [formData, setFormData] = useState({
         name: '',
